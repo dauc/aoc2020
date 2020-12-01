@@ -1,0 +1,11 @@
+{
+  "name": "aoc20d01",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": {
+    "name": "Devin Auclair",
+    "email": "devinauclair@gmail.com"
+  }
+}
