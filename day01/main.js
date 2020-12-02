@@ -1,4 +1,4 @@
-const aoc01 = require('./aoc01')
+const aoc = require('./aoc01')
 const fs = require('fs')
 
 fs.readFile('input', 'utf8', (err, data) => {
@@ -6,7 +6,8 @@ fs.readFile('input', 'utf8', (err, data) => {
     console.error(err)
     return
   }
-  const expenses = data.split('\n').map(x => +x)
-  console.log(aoc01.part1(expenses))
-  console.log(aoc01.part2(expenses))
+
+  const expenses = aoc.parse(data)
+  console.log(aoc.part1(expenses))
+  console.log(aoc.part2(expenses))
 })
