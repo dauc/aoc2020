@@ -1,4 +1,4 @@
-const aoc = require('./aoc01')
+const aoc = require('./aoc02')
 const fs = require('fs')
 
 fs.readFile('input', 'utf8', (err, data) => {
