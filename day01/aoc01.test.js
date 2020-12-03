@@ -1,6 +1,6 @@
 const aoc = require('./aoc01')
 
-const parse_input = "1721\n979\n366\n299\n675\n1456"
+const parseInput = '1721\n979\n366\n299\n675\n1456'
 const input = [
   1721,
   979,
@@ -11,7 +11,7 @@ const input = [
 ]
 
 test('parse', () => {
-  expect(aoc.parse(parse_input)).toStrictEqual(input)
+  expect(aoc.parse(parseInput)).toStrictEqual(input)
 })
 
 test('part1', () => {
