@@ -1,11 +1,18 @@
 {
   "name": "aoc20d01",
   "license": "MIT",
+  "version": "1.0.0",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "tsc": "tsc"
   },
   "author": {
     "name": "Devin Auclair",
     "email": "devinauclair@gmail.com"
-  }
+  },
+  "defDependencies": {
+    "@types/jest": "^26.0.17",
+    "ts-jest": "^26.4.4"
+  },
+  "lib": ["ES6"]
 }

@@ -1,4 +1,4 @@
-const aoc = require('./aoc01')
+import { parseData, part1, part2 } from "./aoc01"
 
 const parseInput = '1721\n979\n366\n299\n675\n1456'
 const input = [
@@ -11,13 +11,13 @@ const input = [
 ]
 
 test('parse', () => {
-  expect(aoc.parse(parseInput)).toStrictEqual(input)
+  expect(parseData(parseInput)).toStrictEqual(input)
 })
 
 test('part1', () => {
-  expect(aoc.part1(input)).toBe(514579)
+  expect(part1(input)).toBe(514579)
 })
 
 test('part2', () => {
-  expect(aoc.part2(input)).toBe(241861950)
+  expect(part2(input)).toBe(241861950)
 })

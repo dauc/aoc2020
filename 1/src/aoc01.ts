@@ -39,11 +39,11 @@
 // Of course, your expense report is much larger. Find the two entries that sum
 // to 2020; what do you get if you multiply them together?
 
-function parseData (data) {
+export function parseData (data) {
   return data.split('\n').map(x => +x)
 }
 
-function part1 (expenses) {
+export function part1 (expenses) {
   for (let i = 0; i < expenses.length; i++) {
     for (let j = 0; j < i; j++) {
       if (expenses[i] + expenses[j] === 2020) {
@@ -67,7 +67,7 @@ function part1 (expenses) {
 // 2020?
 //
 
-function part2 (expenses) {
+export function part2 (expenses) {
   for (let i = 0; i < expenses.length; i++) {
     for (let j = 0; j < i; j++) {
       for (let k = 0; k < j; k++) {
@@ -77,10 +77,4 @@ function part2 (expenses) {
       }
     }
   }
-}
-
-module.exports = {
-  parse: parseData,
-  part1: part1,
-  part2: part2
 }
