@@ -1,13 +1,13 @@
-import { parseData, part1, part2 } from "./aoc01"
+import { Day1 } from "./aoc01"
 const fs = require('fs')
 
-fs.readFile(__dirname + '/../input', 'utf8', (err, data) => {
+fs.readFile(__dirname + '/../input', 'utf8', (err : any, data : string) => {
   if (err) {
     console.error(err)
     return
   }
 
-  const parsed = parseData(data)
-  console.log(part1(parsed))
-  console.log(part2(parsed))
+  let day = new Day1(data)
+  console.log(day.part1())
+  console.log(day.part2())
 })

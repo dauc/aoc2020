@@ -3,8 +3,10 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
-    "start": "node main.js",
-    "tsc": "tsc"
+    "build": "tsc",
+    "clean": "rm -r ./built",
+    "start": "node ./built/main.js",
+    "test": "jest"
   },
   "author": {
     "name": "Devin Auclair",
