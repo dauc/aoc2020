@@ -1,0 +1,25 @@
+{
+  "name": "aoc20d09",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -r ./built",
+    "start": "node ./built/main.js",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Devin Auclair",
+    "email": "devinauclair@gmail.com"
+  },
+  "defDependencies": {
+    "@types/jest": "^26.0.17",
+    "ts-jest": "^26.4.4"
+  },
+  "lib": [
+    "ES6"
+  ],
+  "dependencies": {
+    "advent-of-code-client": "^0.1.2"
+  }
+}
